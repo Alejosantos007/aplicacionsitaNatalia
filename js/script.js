@@ -17,21 +17,3 @@ document.getElementById('guardar').addEventListener('click', function () {
     localStorage.setItem('sgRegis', JSON.stringify(saveRegis));
     alert('Registro de signos vitales guardado');
 });
-
-document.getElementById('guardar_glicemia').addEventListener('click', function () {
-    const glicemia = document.getElementById('glicemia').value;
-    const fecha_glicosa = document.getElementById('fecha_glicosa').value;
-    const observaciones_glicosa = document.getElementById('observaciones_glicosa').value;
-
-    if (!glicemia || !fecha_glicosa || !observaciones_glicosa) {
-        alert('Por favor, completa todos los campos');
-        return;
-    }
-
-    const newRegisglicemia = { glicemia, fecha_glicosa, observaciones_glicosa };
-    const saveRegistglicemia = JSON.parse(localStorage.getItem('glicosaRegis')) || [];
-
-    saveRegistglicemia.push(newRegisglicemia);
-    localStorage.setItem('glicosaRegis', JSON.stringify(saveRegistglicemia));
-    alert('Registro de glicemia guardado');
-});
