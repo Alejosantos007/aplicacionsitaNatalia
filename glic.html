@@ -38,25 +38,21 @@
 
         <div class="formulario">
             <div>
-                <p>Sistolica</p>
-                <input type="text" placeholder="110" class="escribir">
-            </div>
-            <div>
-                <p>Distolica</p>
-                <input type="text" placeholder="90" class="escribir">
+                <p>Glicemia</p>
+                <input type="text" id="glicemia" placeholder="90" class="escribir">
             </div>
             <div>
                 <p>Hora y fecha</p>
-                <input type="datetime-local" class="escribir">
+                <input type="datetime-local" id="fecha_glicosa" class="escribir">
             </div>
             <div>
-                <input type="text" placeholder="Observaciones" class="escribir descripcion">
+                <input type="text" id="observaciones_glicosa" placeholder="Observaciones" class="escribir descripcion">
             </div>
-            <button onclick="alert('REGISTRO GUARDADO')" class="guardar-btn">
+            <button id="guardar_glicemia" class="guardar-btn">
                 GUARDAR REGISTRO
             </button>
         </div>
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
