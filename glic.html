@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glucemia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="option">
+                <a href="sg.html">
+                    <img src="img/signos.png">
+                    <h1>Signos vitales</h1>
+                </a>
+            </div>
+            <div class="option">
+                <a href="glic.html">
+                    <img src="img/gluc.png">
+                    <h1>Glucemia</h1>
+                </a>
+            </div>
+            <div class="option">
+                <a href="stats.html">
+                    <img src="img/stats.png">
+                    <h1>Estadisticas</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenido">
+        <div class="titulo">
+            <img src="img/gluc.png" alt="Glicemia">
+            <p>Registros de Glicemia</p>
+        </div>
+
+        <div class="formulario">
+            <div>
+                <p>Sistolica</p>
+                <input type="text" placeholder="110" class="escribir">
+            </div>
+            <div>
+                <p>Distolica</p>
+                <input type="text" placeholder="90" class="escribir">
+            </div>
+            <div>
+                <p>Hora y fecha</p>
+                <input type="datetime-local" class="escribir">
+            </div>
+            <div>
+                <input type="text" placeholder="Observaciones" class="escribir descripcion">
+            </div>
+            <button onclick="alert('REGISTRO GUARDADO')" class="guardar-btn">
+                GUARDAR REGISTRO
+            </button>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
